@@ -1,0 +1,43 @@
+<section id="viewUser">
+                                          <div class="container-fluid" ng-controller="ViewUserController">
+                                            <div class="page-title" id="">
+                                                 <h2>User Details
+                                                  <span class="pull-right">
+                                                    <a href="#/users" class="btn colour">
+                                                     <i class="fa fa-chevron-left" aria-hidden="true">  </i> Back
+                                                    </a>
+                                                  </span>
+                                                 </h2> 
+                                            </div>
+                                            <div class="page white-background">
+                                            	<div class="row container-fluid">
+                                            		<div class="col-sm-6 profile">
+                                            			<div class="profile-details">
+                                            				<h4 class="colour">Name </h4>
+                                            				<p>{{user.firstName}} {{user.lastName}}</p>
+                                            			</div>
+                                            			<div class="profile-details">
+                                            				<h4 class="colour">Email </h4>
+                                            				<p>{{user.email}}</p>
+                                            			</div>
+                                            			<div class="profile-details">
+                                            				<h4 class="colour">Address </h4>
+                                            				<p>{{user.address.street}}, </p>
+                                            				<p>{{user.address.city}},{{user.address.state}},{{user.address.country}},{{user.address.zip}}</p>
+                                            			</div>
+                                            		</div>
+                                            		<div class="col-sm-6 container">
+                                            			<img class=" img-thumbnail profile-pic pull-right" src="{{user.profilePic}}">
+                                            		</div>
+                                            	</div>
+                                            	<div class="row container-fluid">
+                                            		<div class="col-lg-12 profile-details">
+                                            			<a href="#/users/{{user.id}/delete}" class="btn btn-warning " ng-click="deleteUser()">Delete</a>
+                                            		</div>
+                                            	</div>
+                                            	
+                                            
+                                            </div>
+                                            
+                                          </div>
+</section>

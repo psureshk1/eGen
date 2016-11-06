@@ -1,0 +1,129 @@
+<section id="newuser">
+                                          <div class="container-fluid" ng-controller="NewUserController">
+                                            <div class="page-title" id="">
+                                                 <h2>Add User 
+                                                  <span class="pull-right">
+                                                    <a href="#/users" class="btn colour">
+                                                     <i class="fa fa-chevron-left" aria-hidden="true">  </i> Back
+                                                    </a>
+                                                  </span>
+                                                 </h2> 
+                                            </div>
+                                            <div class="page white-background">
+                                              <form class="container-fluid" name='newUser'>
+                                              <!-- <table class="table" id="new-user-table">
+                                                <tr>
+                                                  <td class="form-group">
+                                                    <label for="firstName" class="colour ">First Name</label>
+                                                    <input type="text" class="form-control " name="firstName" placeholder="First Name" required>
+                                                  </td>
+                                                  <td class="form-group">
+                                                    <label for="lastName" class="colour ">Last Name</label>
+                                                    <input type="text" class="form-control" name="lastName" placeholder="Last Name" required>
+                                                  </td>
+                                                </tr>
+                                              
+                                               
+                                                <tr>
+                                                  <td class="form-group" id="td-email">
+                                                    <label for="Email" class="colour">Email</label>
+                                                    <input type="email" class="form-control" name="Email" placeholder="example@domain.com" required>
+                                                  </td>
+                                                </tr>
+                                                <tr class="">
+                                                   <td class="form-group">
+                                                    <label for="Street" class="colour ">Street Address</label>
+                                                    <input type="text" class="form-control " name="Street" placeholder="Street Address / Apt number" >
+                                                   </td>
+                                                   <td class="form-group">
+                                                     <label for="City" class="colour ">City</label>
+                                                     <input type="text" class="form-control " name="City" placeholder="Last Name" >
+                                                   </td>
+                                                </tr>
+                                                <tr class="">
+                                                   <td class="form-group">
+                                                    <label for="Phone" class="colour ">Phone</label>
+                                                    <input type="text" class="form-control " name="Phone" placeholder="Contact Number" >
+                                                   </td>
+                                                   <td class="form-group">
+                                                     <label for="Mobile" class="colour ">Mobile</label>
+                                                     <input type="text" class="form-control " name="Mobile" placeholder="Mobile Number" >
+                                                   </td>
+                                                </tr>
+                                                </table> -->
+                                               
+                                                    <div class="row container-fluid">
+                                                      <div class="form-group col-md-6">
+                                                        <label for="firstName" class="colour ">First Name</label>
+                                                        <input type="text" class="form-control " name="firstName"  ng-model='firstName'  placeholder="First Name" required>
+
+                                                        <!-- validation -->
+                                                         <span ng-show="newUser.firstName.$touched && newUser.firstName.$invalid" class="error">The first Name is required.</span>
+
+                                                      </div>
+                                                      <div class="form-group col-md-6">
+                                                        <label for="lastName" class="colour ">Last Name</label>
+                                                        <input type="text" class="form-control" name="lastName"  ng-model='lastName' placeholder="Last Name" required>
+
+                                                        <!-- validation -->
+                                                         <span ng-show="newUser.lastName.$touched && newUser.lastName.$invalid" class="error">The Last name is required.</span>
+                                                         
+                                                      </div>
+                                                    </div>
+                                                  
+                                                   
+                                                    <div class="row container-fluid" >
+                                                      <div class="form-group col-md-12" id="td-email">
+                                                        <label for="Email" class="colour">Email</label>
+                                                        <input type="email" class="form-control" name="Email"  ng-model='Email' placeholder="example@domain.com" required>
+
+                                                        <!-- check validation -->
+
+                                                        <span ng-show="newUser.Email.$touched && newUser.Email.$invalid" class="error">The name is required.</span>
+
+                                                      </div>
+                                                    </div>
+                                                    <div class="row container-fluid">
+                                                       <div class="form-group col-md-6">
+                                                        <label for="Street" class="colour ">Street Address</label>
+                                                        <input type="text" class="form-control " name="Street"  ng-model='Street' placeholder="Street Address / Apt number" >
+                                                       </div>
+                                                       <div class="form-group col-md-6">
+                                                         <label for="City" class="colour ">City</label>
+                                                         <input type="text" class="form-control " name="City" ng-model='City'  placeholder="Last Name" >
+                                                       </div>
+                                                    </div>
+                                                    <div class="row container-fluid">
+                                                       <div class="form-group col-md-6">
+                                                        <label for="Phone" class="colour ">Phone</label>
+                                                        <input type="text" class="form-control " name="Phone"  ng-model='Phone' placeholder="Contact Number" >
+                                                       </div>
+                                                       <div class="form-group col-md-6">
+                                                         <label for="Mobile" class="colour ">Mobile</label>
+                                                         <input type="text" class="form-control " name="Mobile" ng-model='Mobile'  placeholder="Mobile Number" >
+                                                       </div>
+                                                      
+                                                    </div>
+                                                    <div class="row container-fluid">
+                                                       <div class="form-group col-md-6">
+                                                        
+                                                         <input type="button" class="colour btn btn-md" name="Add" value="RESET" ng-click="reset()">
+                                                       </div>
+                                                       <div class="form-group col-md-6">
+                                                        
+                                                         
+                                                       <input type="button" class=" btn btn-warning" name="Add" value="Add">
+                                                       </div>
+                                                      
+                                                    </div>
+                                                    <div class="row container-fluid">
+
+                                                      
+                                                    </div>
+                                                    
+                                                 
+                                              </form>
+                                            </div>
+                                            
+                                          </div>
+</section>
