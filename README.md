@@ -4,7 +4,8 @@
 
 - Folder containing all the libraries and partials for the application 
 
-- Run on XAMPP Apache local server - since angular needs a locla server if run on google chrome 
+- Run on XAMPP Apache local server - since angular needs a local server if run on google chrome 
+(kindly run on a local server inorder to access routes )
 ### Tech
 Project built using grunt JS
    * connect - mimification - concatination - watch
